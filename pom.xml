@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.itaas</groupId>
+  <artifactId>helloMaven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>helloMaven</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <scm>		
+        <connection>scm:git:git@github.com:omieyespy85/hellomaven.git</connection>
+		<developerConnection>scm:git:git@github.com:omieyespy85/hellomaven.git</developerConnection>
+		<url>https://github.com/omieyespy85/hellomaven.git</url>
+	</scm>
+  <distributionManagement>
+		<downloadUrl>http://localhost:8888/archiva</downloadUrl>
+		<repository>
+			<id>itaas.internal</id>
+			<name>Internal Archiva Repository</name>
+			<url>http://localhost:8888/archiva/repository/internal/</url>
+			<layout>default</layout>
+			<uniqueVersion>false</uniqueVersion>
+		</repository>
+		<snapshotRepository>
+			<id>itaas.snapshots</id>
+			<name>Internal Archiva Repository</name>
+			<url>http://localhost:8888/archiva/repository/snapshots/</url>
+			<layout>default</layout>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+  
+</project>

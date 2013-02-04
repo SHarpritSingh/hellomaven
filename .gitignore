@@ -1,0 +1,58 @@
+# Compiled Source
+*.class
+*.pyc
+*.o
+*.so
+# Packages to be excluded
+# We don't want to check in binaries by default
+# you can add exclusions on a project by project basis
+# at the end of the file if you really a good reason to
+# commit a .zip file or something of that nature.
+# A better solution would be to put it on the wiki and refer to 
+# it from a README file 
+*.7z
+*.dmg
+*.gz
+*.tar
+*.iso
+*.zip
+*.jar
+*.war
+*.ear
+*.rar
+
+# Misc Files ( Logs, Databases, Temporary Files )
+# We don't want to check in anything that can be
+# recreated from a script or that is temporal in nature like
+# log files.
+*.log
+*.sqlite
+*.bak
+
+# Directories to be excluded
+bin/
+classes/
+lib/
+build/
+log/
+logs/
+tmp/
+temp/
+.svn/
+.cvs/
+target/
+
+# Text Editor/IDE specific
+# We don't want to check in personal IDE configurations
+# so that they don't over-write others that are using the same
+# tools local configuration
+.project
+.classpath
+*.swp
+*~
+.idea/
+.settings/
+nbproject/
+*.ipr
+*.iws
+*.iml
