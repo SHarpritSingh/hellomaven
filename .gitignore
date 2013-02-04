@@ -3,6 +3,8 @@
 *.pyc
 *.o
 *.so
+release.properties
+
 # Packages to be excluded
 # We don't want to check in binaries by default
 # you can add exclusions on a project by project basis
